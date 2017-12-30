@@ -1,0 +1,6 @@
+hello\MessageResource.class
+hello\MessagesDAO.class
+hello\Application.class
+hello\Message.class
+hello\MessageService.class
+hello\LatestMessagesResponse.class

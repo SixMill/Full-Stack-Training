@@ -1,0 +1,6 @@
+img.chat_window {
+    width:40%; /* you can use % */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }

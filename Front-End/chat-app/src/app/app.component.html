@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <app-chat-window></app-chat-window>
+
+  <div class="show_username" *ngIf="isUsernameGiven; else elseBlock">
+    <p>Now talking as: &nbsp; {{username}}</p>
+    <input #newMessage (keyup.enter)="sendNewMessage(newMessage.value)">
+    <button (click)="sendNewMessage(newMessage.value)">Send Message!</button>
+  </div>
+  <ng-template #elseBlock>
+    <p>Enter your Username to start chatting!</p>
+    <div class="ask_username">
+      <input #newUser (keyup.enter)="getUsername(newUser.value)">
+      <button (click)="getUsername(newUser.value)">Go!</button>
+    </div>
+  </ng-template>
+
+  <div class="show_messages" *ngIf="isMessageListReceived">
+  <ul class="latestMessages">
+      <li *ngFor="let message of latestMessages">
+        <p class="userAndMessage">{{message.username}}: &nbsp; &nbsp;  {{message.message}}</p>
+        <p class="postedAt">&nbsp; &nbsp; &nbsp; {{message.postedAt}}</p>
+      </li>
+  </ul>
+  </div>
+
+</html>

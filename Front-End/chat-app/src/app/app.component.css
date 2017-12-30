@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One');
+
+p {
+    font-family: 'Kumar One', cursive;
+    font-size: 20px;
+    color: powderblue;
+    text-align:center;
+}
+
+ul.latestMessages {
+  text-align:center;
+}
+
+ul.latestMessages p.userAndMessage {
+    font-family: 'Kumar One', cursive;
+    font-size: 14px;
+    color: skyblue;
+    display:inline;
+}
+
+ul.latestMessages p.postedAt {
+    font-family: 'Kumar One', cursive;
+    font-size: 10px;
+    color: palegreen;
+    display:inline;
+}
+
+div.ask_username {
+    text-align:center;
+}
+
+div.show_username {
+    text-align:center;
+    color: palegreen;
+    font-family: 'Kumar One', cursive;
+    font-size: 14px;
+}
+div.show_username p {
+    text-align:center;
+    color: palegreen;
+    font-family: 'Kumar One', cursive;
+    font-size: 16px;
+}
